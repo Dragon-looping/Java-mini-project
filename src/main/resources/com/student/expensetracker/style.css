@@ -1,0 +1,270 @@
+/* ==========================================================================
+   DHANLEKHA - Personal Expense Tracker
+   Theme: Antique Gold (#A9874F), Deep Espresso (#251D16), Ivory (#F7F3EA), Champagne (#E5D2A9)
+   ========================================================================== */
+
+.root {
+    -fx-font-family: "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+    -fx-font-size: 13px;
+    -fx-background-color: #F7F3EA; /* Ivory background */
+    -fx-text-fill: #251D16;        /* Deep espresso text */
+}
+
+/* ==========================================================================
+   Welcome Screen Styles
+   ========================================================================== */
+
+.welcome-pane {
+    -fx-background-color: #251D16; /* Solid deep espresso background */
+    -fx-alignment: CENTER;
+}
+
+.btn-enter {
+    -fx-background-color: #E5D2A9; /* Champagne fill */
+    -fx-text-fill: #251D16;        /* Deep espresso text */
+    -fx-font-size: 15px;
+    -fx-font-weight: bold;
+    -fx-background-radius: 6px;
+    -fx-border-radius: 6px;
+    -fx-border-color: transparent;
+    -fx-border-width: 2px;
+    -fx-padding: 9px 44px;
+    -fx-cursor: hand;
+}
+
+.btn-enter:hover {
+    -fx-background-color: #F2E3C6;
+}
+
+.btn-enter:focused {
+    -fx-border-color: #A9874F;     /* Antique gold visible keyboard focus outline */
+    -fx-border-width: 2px;
+}
+
+/* ==========================================================================
+   Tracker Main Screen Styles
+   ========================================================================== */
+
+.tracker-root {
+    -fx-background-color: #F7F3EA;
+}
+
+/* Header Section */
+.header-box {
+    -fx-background-color: #FFFFFF;
+    -fx-border-color: #E8E2D5;
+    -fx-border-width: 0 0 1px 0;
+    -fx-padding: 12px 22px;
+    -fx-alignment: CENTER_LEFT;
+}
+
+.month-display {
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #251D16;
+    -fx-padding: 0 10px;
+}
+
+.nav-button {
+    -fx-background-color: #EDE6D8;
+    -fx-text-fill: #251D16;
+    -fx-font-weight: bold;
+    -fx-background-radius: 6px;
+    -fx-border-color: #D8CEBE;
+    -fx-border-radius: 6px;
+    -fx-padding: 6px 12px;
+    -fx-cursor: hand;
+}
+
+.nav-button:hover {
+    -fx-background-color: #E2DAC8;
+    -fx-border-color: #A9874F;
+}
+
+/* Summary Cards */
+.summary-container {
+    -fx-padding: 10px 22px;
+    -fx-spacing: 16px;
+}
+
+.summary-card {
+    -fx-background-color: #FFFFFF;
+    -fx-border-color: #E8E2D5;
+    -fx-border-radius: 8px;
+    -fx-background-radius: 8px;
+    -fx-padding: 12px 16px;
+    -fx-effect: dropshadow(three-pass-box, rgba(37, 29, 22, 0.04), 6, 0, 0, 2);
+}
+
+.summary-label {
+    -fx-font-size: 11px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #736152;
+    -fx-text-transform: uppercase;
+}
+
+.summary-value {
+    -fx-font-size: 19px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #251D16;
+}
+
+.summary-value-negative {
+    -fx-font-size: 19px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #B91C1C; /* Alert crimson for budget deficit */
+}
+
+/* Form Container */
+.form-card {
+    -fx-background-color: #FFFFFF;
+    -fx-border-color: #E8E2D5;
+    -fx-border-radius: 8px;
+    -fx-background-radius: 8px;
+    -fx-padding: 12px 18px;
+    -fx-spacing: 10px;
+    -fx-effect: dropshadow(three-pass-box, rgba(37, 29, 22, 0.04), 6, 0, 0, 2);
+}
+
+.form-label {
+    -fx-font-size: 12px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #4A3B30;
+}
+
+/* Inputs */
+.text-field, .combo-box, .date-picker {
+    -fx-background-color: #FFFFFF;
+    -fx-border-color: #D8CEBE;
+    -fx-border-radius: 6px;
+    -fx-background-radius: 6px;
+    -fx-padding: 5px 8px;
+    -fx-font-size: 13px;
+    -fx-text-fill: #251D16;
+}
+
+.text-field:focused, .combo-box:focused, .date-picker:focused {
+    -fx-border-color: #A9874F; /* Antique gold focus border */
+    -fx-border-width: 1.5px;
+}
+
+/* Buttons */
+.btn-primary {
+    -fx-background-color: #A9874F; /* Antique gold */
+    -fx-text-fill: #FFFFFF;
+    -fx-font-weight: bold;
+    -fx-background-radius: 6px;
+    -fx-padding: 7px 18px;
+    -fx-cursor: hand;
+}
+
+.btn-primary:hover {
+    -fx-background-color: #93733E;
+}
+
+.btn-secondary {
+    -fx-background-color: #EDE6D8;
+    -fx-text-fill: #251D16;
+    -fx-font-weight: 600;
+    -fx-background-radius: 6px;
+    -fx-border-color: #D8CEBE;
+    -fx-border-radius: 6px;
+    -fx-padding: 7px 14px;
+    -fx-cursor: hand;
+}
+
+.btn-secondary:hover {
+    -fx-background-color: #E2DAC8;
+}
+
+.btn-small {
+    -fx-background-color: #F4EEDF;
+    -fx-text-fill: #6B4E1B;
+    -fx-font-size: 11px;
+    -fx-font-weight: bold;
+    -fx-background-radius: 4px;
+    -fx-border-color: #D6C29E;
+    -fx-border-radius: 4px;
+    -fx-padding: 3px 8px;
+    -fx-cursor: hand;
+}
+
+.btn-small:hover {
+    -fx-background-color: #EBDCBD;
+}
+
+.btn-danger {
+    -fx-background-color: #FEF2F2;
+    -fx-text-fill: #B91C1C;
+    -fx-font-weight: 600;
+    -fx-background-radius: 6px;
+    -fx-border-color: #FECACA;
+    -fx-border-radius: 6px;
+    -fx-padding: 7px 14px;
+    -fx-cursor: hand;
+}
+
+.btn-danger:hover {
+    -fx-background-color: #FEE2E2;
+    -fx-border-color: #F87171;
+}
+
+/* Table Section */
+.table-container {
+    -fx-padding: 8px 22px;
+    -fx-spacing: 8px;
+}
+
+.table-view {
+    -fx-background-color: #FFFFFF;
+    -fx-border-color: #D8CEBE;
+    -fx-border-radius: 6px;
+    -fx-background-radius: 6px;
+    -fx-padding: 0;
+}
+
+.table-view .column-header-background {
+    -fx-background-color: #F3ECE0;
+    -fx-border-color: #E8E2D5;
+    -fx-border-width: 0 0 1px 0;
+}
+
+.table-view .column-header {
+    -fx-background-color: transparent;
+    -fx-font-weight: bold;
+    -fx-text-fill: #4A3B30;
+    -fx-padding: 8px 6px;
+}
+
+.table-row-cell {
+    -fx-background-color: #FFFFFF;
+    -fx-border-color: #F5EFE6;
+    -fx-border-width: 0 0 1px 0;
+    -fx-padding: 3px 0;
+}
+
+.table-row-cell:odd {
+    -fx-background-color: #FAF7F2;
+}
+
+.table-row-cell:filled:selected {
+    -fx-background-color: #EADFC7; /* Champagne/gold tint */
+}
+
+.table-row-cell:filled:selected .text {
+    -fx-fill: #251D16;
+    -fx-font-weight: bold;
+}
+
+.table-placeholder {
+    -fx-text-fill: #8C7B6E;
+    -fx-font-size: 13px;
+    -fx-font-style: italic;
+}
+
+/* Table Bottom Actions */
+.action-bar {
+    -fx-padding: 8px 22px 14px 22px;
+    -fx-spacing: 12px;
+    -fx-alignment: CENTER_LEFT;
+}
